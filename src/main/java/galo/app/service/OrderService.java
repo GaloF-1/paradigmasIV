@@ -7,6 +7,11 @@ import java.util.Optional;
 
 @Service @Transactional
 public class OrderService {
-    private final OrderRepository orderRepo; public OrderService(OrderRepository o){ this.orderRepo=o; }
-    public Optional<Order> get(Long id){ return orderRepo.findById(id); }
+    private final OrderRepository orderRepo;
+    public OrderService(OrderRepository o){
+        this.orderRepo=o;
+    }
+    public Optional<Order> get(Long id){
+        return orderRepo.findById(id);
+    }
 }
