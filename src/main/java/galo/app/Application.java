@@ -20,7 +20,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 // @EntityScan(basePackages={"pablosz.pkgdomain1,pkgpablosz.domain2,etc"})
 
 @SpringBootApplication
-public class Application implements CommandLineRunner
+public class YApplication implements CommandLineRunner
 {
     private static Logger LOG = LoggerFactory.getLogger(Application.class);
 	

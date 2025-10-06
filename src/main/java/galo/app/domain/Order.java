@@ -16,5 +16,5 @@ public class Order {
     @OneToMany(mappedBy="order", cascade=CascadeType.ALL, orphanRemoval=true, fetch=FetchType.EAGER)
     private List<OrderItem> items = new ArrayList<>();
     @Column(nullable=false) private BigDecimal total;
-    public enum Status { NEW, PAID, SHIPPED, CANCELLED }
+    public enum Status { NEW, PAGADO, DESPACHADO, CANCELADO }
 }
